@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Contact Us | LokusaTreats</title>
+
+
+
+    <meta name="description"
+
+        content="Get in touch with LokusaTreats in Cape Town for orders, questions, or enquiries. Visit us, call, or send a message online.">
+
+
+
+    <link rel="stylesheet" href="Stylesheet.css">
+
+
+
+    <!-- Leaflet (free interactive map, no API key needed) -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+</head>
+
+
+
+<body>
+
+
+
+    <header class="site-header">
+
+
+
+        <div class="container header-inner">
+
+
+
+            <a href="index.html" class="logo">
+
+                <img src="C:\Users\Student\Documents\Visual Studio 2022\My Website\LokusaTreats\Images\LOGO.png" width="250" height="150" alt="LokusaTreats logo">
+
+                <span class="logo-text">LokusaTreats</span>
+
+            </a>
+
+
+
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <ul class="nav-menu">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="shop.html">Our Treats</a></li>
+
+                    <li><a href="custom-orders.html">Custom Cakes</a></li>
+
+                    <li><a href="corporate.html">Corporate &amp; Bulk Orders</a></li>
+
+                    <li><a href="enquiry.html">Enquiry</a></li>
+
+                    <li><a href="gallery.html">Gallery</a></li>
+
+                    <li><a href="blog.html">Blog</a></li>
+
+                    <li><a href="contact.html" class="active">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <div class="header-actions">
+
+                <a href="#" class="icon-link">Search</a>
+
+                <a href="#" class="icon-link">Account</a>
+
+                <a href="cart.html" class="icon-link">Cart</a>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </header>
+
+
+
+
+
+    <main>
+
+
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <p class="eyebrow">Contact</p>
+
+                <h1>Get in Touch</h1>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="contact-section">
+
+            <div class="container contact-grid">
+
+
+
+                <div class="contact-info-cards">
+
+                    <div class="contact-card">
+
+                        <h3>Phone</h3>
+
+                        <p><a href="tel:+275438976596">+27 54 389 7659 6</a></p>
+
+                    </div>
+
+                    <div class="contact-card">
+
+                        <h3>Email</h3>
+
+                        <p><a href="mailto:orders@lokusatreats.co.za">orders@lokusatreats.co.za</a></p>
+
+                    </div>
+
+                    <div class="contact-card">
+
+                        <h3>Address</h3>
+
+                        <p>Cape Town, Western Cape, South Africa</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Interactive Leaflet map -->
+
+                <div class="contact-map">
+
+                    <div id="leaflet-map" style="height: 320px;"></div>
+
+                </div>
+
+
+
+                <form id="contact-form" class="contact-form" novalidate>
+
+
+
+                    <div class="form-row">
+
+                        <label for="contact-name">Full Name</label>
+
+                        <input type="text" id="contact-name" name="name" required>
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <label for="contact-email">Email</label>
+
+                        <input type="email" id="contact-email" name="email" required>
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <label for="contact-type">Message Type</label>
+
+                        <select id="contact-type" name="type">
+
+                            <option value="General Enquiry">General Enquiry</option>
+
+                            <option value="Order Question">Order Question</option>
+
+                            <option value="Feedback">Feedback</option>
+
+                            <option value="Other">Other</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-row form-row-full">
+
+                        <label for="contact-message">Message</label>
+
+                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+
+                    </div>
+
+
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+
+
+
+                </form>
+
+
+
+                <a href="https://wa.me/27543897659" class="btn btn-whatsapp">Chat on WhatsApp</a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FAQ Accordion (interactive element) -->
+
+        <section class="faq-section">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <p class="eyebrow">Frequently Asked Questions</p>
+
+                    <h2>Need to Know More?</h2>
+
+                </div>
+
+
+
+                <div class="accordion" id="faq-accordion">
+
+
+
+                    <div class="accordion-item">
+
+                        <button class="accordion-trigger" aria-expanded="false">
+
+                            How far in advance should I order a custom cake?
+
+                            <span class="accordion-icon">+</span>
+
+                        </button>
+
+                        <div class="accordion-panel">
+
+                            <p>We recommend at least 2 weeks' notice for custom cakes and celebration orders, and
+
+                                4&ndash;6 weeks for wedding cakes during busy seasons.</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="accordion-item">
+
+                        <button class="accordion-trigger" aria-expanded="false">
+
+                            Do you deliver outside Cape Town?
+
+                            <span class="accordion-icon">+</span>
+
+                        </button>
+
+                        <div class="accordion-panel">
+
+                            <p>We currently deliver within the greater Cape Town area. For orders outside this
+
+                                region, please contact us to discuss courier options.</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="accordion-item">
+
+                        <button class="accordion-trigger" aria-expanded="false">
+
+                            Can you accommodate allergies or dietary requirements?
+
+                            <span class="accordion-icon">+</span>
+
+                        </button>
+
+                        <div class="accordion-panel">
+
+                            <p>Yes &mdash; we offer gluten-free, vegan, and sugar-free options on request. Please
+
+                                mention any allergies in your order notes.</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="accordion-item">
+
+                        <button class="accordion-trigger" aria-expanded="false">
+
+                            What payment methods do you accept?
+
+                            <span class="accordion-icon">+</span>
+
+                        </button>
+
+                        <div class="accordion-panel">
+
+                            <p>We accept card payments and instant EFT at checkout, as well as cash on collection
+
+                                for in-store orders.</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <footer class="site-footer">
+
+
+
+        <div class="container footer-grid">
+
+
+
+            <div class="footer-col footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <img src="C:\Users\Student\Documents\Visual Studio 2022\My Website\LokusaTreats\Images\LOGO.png" width="250" height="150" alt="LokusaTreats logo">
+
+                    <span class="logo-text">LokusaTreats</span>
+
+                </a>
+
+                <p>Small-batch sweets, made to be shared.</p>
+
+            </div>
+
+
+
+            <nav class="footer-col">
+
+                <h3>Shop</h3>
+
+                <ul>
+
+                    <li><a href="shop.html">Cupcakes</a></li>
+
+                    <li><a href="shop.html">Cookies</a></li>
+
+                    <li><a href="shop.html">Chocolates</a></li>
+
+                    <li><a href="shop.html">Hampers</a></li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <nav class="footer-col">
+
+                <h3>Company</h3>
+
+                <ul>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="corporate.html">Corporate &amp; Bulk Orders</a></li>
+
+                    <li><a href="custom-orders.html">Custom Cakes</a></li>
+
+                    <li><a href="enquiry.html">Enquiry</a></li>
+
+                    <li><a href="blog.html">Blog</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <div class="footer-col">
+
+                <h3>Get in Touch</h3>
+
+                <address>
+
+                    <p>Cape Town, Western Cape, South Africa</p>
+
+                    <p><a href="tel:+275438976596">+27 54 389 7659 6</a></p>
+
+                    <p><a href="mailto:orders@lokusatreats.co.za">orders@lokusatreats.co.za</a></p>
+
+                </address>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>&copy; LokusaTreats. All rights reserved.</p>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+
+
+    <!-- Leaflet JS (free interactive map, no API key needed) -->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+
+    <script src="js/products.js"></script>
+
+    <script src="js/cart.js"></script>
+
+    <script src="js/forms.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+
+    <script>
+
+        // Interactive map centered on Cape Town
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const mapEl = document.getElementById("leaflet-map");
+
+            if (!mapEl || typeof L === "undefined") return;
+
+
+
+            const map = L.map("leaflet-map").setView([-33.9249, 18.4241], 12);
+
+
+
+            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+
+                attribution: "&copy; OpenStreetMap contributors"
+
+            }).addTo(map);
+
+
+
+            L.marker([-33.9249, 18.4241]).addTo(map)
+
+                .bindPopup("LokusaTreats &mdash; Cape Town")
+
+                .openPopup();
+
+        });
+
+
+
+        // FAQ accordion
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            document.querySelectorAll(".accordion-trigger").forEach(function (btn) {
+
+                btn.addEventListener("click", function () {
+
+                    const expanded = btn.getAttribute("aria-expanded") === "true";
+
+                    btn.setAttribute("aria-expanded", String(!expanded));
+
+                    const panel = btn.nextElementSibling;
+
+                    panel.style.maxHeight = expanded ? null : panel.scrollHeight + "px";
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
