@@ -125,3 +125,18 @@ The website structure and styling are being developed in Visual Studio Code. Jav
 Author
 
 LokusaTreats Website Project# LokusaTreats-part2
+
+## Changelog
+2026-10-22
+Added `enquiry.html`: product enquiry form with a live cost estimate pulled from `js/products.js`.
+Added `js/forms.js`: client-side validation (required fields, email and phone format, minimum message length) with inline error messages, AJAX submission using `fetch()`, and a pre-filled `mailto:` link so the customer can send the compiled message.
+Updated `contact.html`: validated contact form with a message-type selector, an FAQ accordion, and an interactive Leaflet map.
+Added `js/lightbox.js` and linked it in `gallery.html`: clicking a photo opens a larger view with next/previous and keyboard controls.
+Added `js/shop-filter.js` plus a search box and sort dropdown on `shop.html`: live search, category filtering and sorting by price or name.
+Updated `js/main.js`: scroll-reveal animation on page sections.
+Added "Enquiry" to the main navigation.
+Added `robots.txt` and `sitemap.xml` for SEO.
+Added Part 3 styles to `Stylesheet.css` (accordion, lightbox, form errors, scroll-reveal).
+2026-11-01
+Fixed: broken comment endings in the Part 3 section of `Stylesheet.css` that were stopping the new styles from applying.
+Fixed: contact page map tiles were blocked (OpenStreetMap returned a 403 error and CARTO required an API key), so I switched to Esri map tiles.
