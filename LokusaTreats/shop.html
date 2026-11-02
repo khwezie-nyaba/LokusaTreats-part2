@@ -1,332 +1,322 @@
-<html lang="en"> 
+<!DOCTYPE html>
 
-<head> 
+<html lang="en">
 
-  <meta charset="UTF-8"> 
+<head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="UTF-8">
 
-  <title>Our Treats | LokusaTreats</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Browse LokusaTreats' full range of cupcakes, cookies, chocolates, and celebration hampers."> 
+  <title>Our Treats | LokusaTreats</title>
 
- <link rel="stylesheet" href="Stylesheet.css"> 
+  <meta name="description" content="Search and filter LokusaTreats' full range of cupcakes, cookies, chocolates, and celebration hampers by category or price.">
 
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> 
+   <link rel="stylesheet" href="Stylesheet.css">
 
-</head> 
+  <link rel="icon" href="C:\Users\Student\Documents\Visual Studio 2022\My Website\LokusaTreats\Images\LOGO.png" type="image/x-icon">
 
-<body> 
+</head>
 
- 
+<body>
 
-  <header class="site-header"> 
 
-    <div class="container header-inner"> 
 
- 
+  <header class="site-header">
 
-      <a href="index.html" class="logo"> 
+    <div class="container header-inner">
 
-        <img src="Images/LOGO.png" alt="LokusaTreats logo"> 
 
-        <span class="logo-text">LokusaTreats</span> 
 
-      </a> 
+      <a href="index.html" class="logo">
 
- 
+        <img src="C:\Users\Student\Documents\Visual Studio 2022\My Website\LokusaTreats\Images\LOGO.png" alt="LokusaTreats logo">
 
-      <nav class="main-nav" aria-label="Main navigation"> 
+        <span class="logo-text">LokusaTreats</span>
 
-        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu"> 
+      </a>
 
-          <span class="sr-only">Menu</span> 
 
-          <span class="nav-toggle-bar"></span> 
 
-        </button> 
+      <nav class="main-nav" aria-label="Main navigation">
 
- 
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
 
-        <ul id="primary-menu" class="nav-menu"> 
+          <span class="sr-only">Menu</span>
 
-          <li><a href="index.html">Home</a></li> 
+          <span class="nav-toggle-bar"></span>
 
-          <li><a href="about.html">About Us</a></li> 
+        </button>
 
-          <li><a href="shop.html" class="active">Our Treats</a></li> 
 
-          <li><a href="custom-orders.html">Custom Cakes</a></li> 
 
-          <li><a href="corporate.html">Corporate &amp; Bulk Orders</a></li> 
+        <ul id="primary-menu" class="nav-menu">
 
-          <li><a href="gallery.html">Gallery</a></li> 
+          <li><a href="index.html">Home</a></li>
 
-          <li><a href="blog.html">Blog</a></li> 
+          <li><a href="about.html">About Us</a></li>
 
-          <li><a href="contact.html">Contact</a></li> 
+          <li><a href="shop.html" class="active">Our Treats</a></li>
 
-        </ul> 
+          <li><a href="custom-orders.html">Custom Cakes</a></li>
 
-      </nav> 
+          <li><a href="corporate.html">Corporate &amp; Bulk Orders</a></li>
 
- 
+          <li><a href="enquiry.html">Enquiry</a></li>
 
-      <div class="header-actions"> 
+          <li><a href="gallery.html">Gallery</a></li>
 
-        <a href="#" class="icon-link" aria-label="Search">Search</a> 
+          <li><a href="blog.html">Blog</a></li>
 
-        <a href="#" class="icon-link" aria-label="Account">Account</a> 
+          <li><a href="contact.html">Contact</a></li>
 
-        <a href="cart.html" class="icon-link cart-link" aria-label="Cart"> 
+        </ul>
 
-          Cart <span class="cart-count">0</span> 
+      </nav>
 
-        </a> 
 
-      </div> 
 
- 
+      <div class="header-actions">
 
-    </div> 
+        <a href="#" class="icon-link" aria-label="Search">Search</a>
 
-  </header> 
+        <a href="#" class="icon-link" aria-label="Account">Account</a>
 
- 
+        <a href="cart.html" class="icon-link cart-link" aria-label="Cart">
 
-  <main> 
+          Cart <span class="cart-count">0</span>
 
- 
+        </a>
 
-    <section class="page-hero"> 
+      </div>
 
-      <div class="container"> 
 
-        <p class="eyebrow">Our Treats</p> 
 
-        <h1>Shop All Treats</h1> 
+    </div>
 
-      </div> 
+  </header>
 
-    </section> 
 
- 
 
-    <section class="shop-section"> 
+  <main>
 
-      <div class="container shop-layout"> 
 
- 
 
-        <aside class="shop-filters" aria-label="Filter products"> 
+    <section class="page-hero">
 
-          <h2>Filter</h2> 
+      <div class="container">
 
-          <fieldset> 
+        <p class="eyebrow">Our Treats</p>
 
-            <legend>Category</legend> 
+        <h1>Shop All Treats</h1>
 
-            <label><input type="checkbox" name="category" value="Cupcakes"> Cupcakes</label> 
+      </div>
 
-            <label><input type="checkbox" name="category" value="Cookies"> Cookies</label> 
+    </section>
 
-            <label><input type="checkbox" name="category" value="Chocolates"> Chocolates</label> 
 
-            <label><input type="checkbox" name="category" value="Hampers"> Hampers</label> 
 
-          </fieldset> 
+    <section class="shop-section">
 
-        </aside> 
+      <div class="container shop-layout">
 
- 
 
-        <div class="product-grid" id="shop-product-grid"> 
 
-          <!-- Product cards are rendered here by JavaScript from products.js --> 
+        <aside class="shop-filters" aria-label="Filter products">
 
-        </div> 
+          <h2>Filter</h2>
 
- 
 
-      </div> 
 
-    </section> 
+          <div class="form-row">
 
- 
+            <label for="shop-search">Search</label>
 
-  </main> 
+            <input type="search" id="shop-search" placeholder="Search treats...">
 
- 
+          </div>
 
-  <footer class="site-footer"> 
 
-    <div class="container footer-grid"> 
 
- 
+          <div class="form-row">
 
-      <div class="footer-col footer-brand"> 
+            <label for="shop-sort">Sort By</label>
 
-        <a href="index.html" class="logo"> 
+            <select id="shop-sort">
 
-          <img src="Images/LOGO.png" alt="LokusaTreats logo"> 
+              <option value="default">Default</option>
 
-          <span class="logo-text">LokusaTreats</span> 
+              <option value="price-asc">Price: Low to High</option>
 
-        </a> 
+              <option value="price-desc">Price: High to Low</option>
 
-        <p>Small-batch sweets, made to be shared.</p> 
+              <option value="name-asc">Name: A to Z</option>
 
-        <div class="social-links"> 
+            </select>
 
-          <a href="#" aria-label="Instagram">Instagram</a> 
+          </div>
 
-          <a href="#" aria-label="Facebook">Facebook</a> 
 
-          <a href="#" aria-label="TikTok">TikTok</a> 
 
-        </div> 
+          <fieldset>
 
-      </div> 
+            <legend>Category</legend>
 
- 
+            <label><input type="checkbox" name="category" value="Cupcakes"> Cupcakes</label>
 
-      <nav class="footer-col" aria-label="Shop links"> 
+            <label><input type="checkbox" name="category" value="Cookies"> Cookies</label>
 
-        <h3>Shop</h3> 
+            <label><input type="checkbox" name="category" value="Chocolates"> Chocolates</label>
 
-        <ul> 
+            <label><input type="checkbox" name="category" value="Hampers"> Hampers</label>
 
-          <li><a href="shop.html">Cupcakes</a></li> 
+          </fieldset>
 
-          <li><a href="shop.html">Cookies</a></li> 
+        </aside>
 
-          <li><a href="shop.html">Chocolates</a></li> 
 
-          <li><a href="shop.html">Hampers</a></li> 
 
-        </ul> 
+        <div class="product-grid" id="shop-product-grid">
 
-      </nav> 
+          <!-- Product cards are rendered here by JavaScript from products.js -->
 
- 
+        </div>
 
-      <nav class="footer-col" aria-label="Company links"> 
 
-        <h3>Company</h3> 
 
-        <ul> 
+      </div>
 
-          <li><a href="about.html">About Us</a></li> 
+    </section>
 
-          <li><a href="corporate.html">Corporate &amp; Bulk Orders</a></li> 
 
-          <li><a href="custom-orders.html">Custom Cakes</a></li> 
 
-          <li><a href="blog.html">Blog</a></li> 
+  </main>
 
-          <li><a href="contact.html">Contact</a></li> 
 
-        </ul> 
 
-      </nav> 
+  <footer class="site-footer">
 
- 
+    <div class="container footer-grid">
 
-      <div class="footer-col footer-contact"> 
 
-        <h3>Get in Touch</h3> 
 
-        <address> 
+      <div class="footer-col footer-brand">
 
-          <p>Cape Town, Western Cape, South Africa</p> 
+        <a href="index.html" class="logo">
 
-          <p><a href="tel:+275438976596">+27 00 000 0000</a></p> 
+         <img src="C:\Users\Student\Documents\Visual Studio 2022\My Website\LokusaTreats\Images\LOGO.png"
+                         alt="LokusaTreats logo">
 
-          <p><a href="mailto:orders@lokusatreats.co.za">orders@lokusatreats.co.za</a></p> 
+          <span class="logo-text">LokusaTreats</span>
 
-        </address> 
+        </a>
 
-        <a href="https://wa.me/275438976596" class="btn btn-whatsapp">Chat on WhatsApp</a> 
+        <p>Small-batch sweets, made to be shared.</p>
 
-      </div> 
+      </div>
 
- 
 
-    </div> 
 
- 
+      <nav class="footer-col" aria-label="Shop links">
 
-    <div class="footer-bottom"> 
+        <h3>Shop</h3>
 
-      <div class="container footer-bottom-inner"> 
+        <ul>
 
-        <p>&copy; <span id="year"></span> LokusaTreats. All rights reserved.</p> 
+          <li><a href="shop.html">Cupcakes</a></li>
 
-        <ul class="footer-legal"> 
+          <li><a href="shop.html">Cookies</a></li>
 
-          <li><a href="privacy-policy.html">Privacy Policy</a></li> 
+          <li><a href="shop.html">Chocolates</a></li>
 
-          <li><a href="terms.html">Terms &amp; Conditions</a></li> 
+          <li><a href="shop.html">Hampers</a></li>
 
-        </ul> 
+        </ul>
 
-      </div> 
+      </nav>
 
-    </div> 
 
-  </footer> 
 
- 
+      <nav class="footer-col" aria-label="Company links">
 
-  <script src="js/products.js"></script> 
+        <h3>Company</h3>
 
-  <script src="js/cart.js"></script> 
+        <ul>
 
-  <script src="js/main.js"></script> 
+          <li><a href="about.html">About Us</a></li>
 
-  <script> 
+          <li><a href="corporate.html">Corporate &amp; Bulk Orders</a></li>
 
-    document.addEventListener("DOMContentLoaded", function () { 
+          <li><a href="custom-orders.html">Custom Cakes</a></li>
 
-      const grid = document.getElementById("shop-product-grid"); 
+          <li><a href="enquiry.html">Enquiry</a></li>
 
-      if (!grid) return; 
+          <li><a href="blog.html">Blog</a></li>
 
-      grid.innerHTML = PRODUCTS.map(function (p) { 
+          <li><a href="contact.html">Contact</a></li>
 
-        return ( 
+        </ul>
 
-          '<article class="product-card" data-product-wrapper>' + 
+      </nav>
 
-            '<a href="product-detail.html?id=' + p.id + '">' + 
 
-              '<div class="product-image"><img src="' + p.image + '" alt="' + p.name + '"></div>' + 
 
-              '<div class="product-info">' + 
+      <div class="footer-col footer-contact">
 
-                '<h3 class="product-name">' + p.name + '</h3>' + 
+        <h3>Get in Touch</h3>
 
-                '<p class="product-price">R ' + p.price.toFixed(2) + '</p>' + 
+        <address>
 
-              '</div>' + 
+          <p>Cape Town, Western Cape, South Africa</p>
 
-            '</a>' + 
+          <p><a href="tel:+275438976596">+27 54 389 7659 6</a></p>
 
-            '<button class="btn btn-outline btn-add-cart" data-product-id="' + p.id + '">Add to Cart</button>' + 
+          <p><a href="mailto:orders@lokusatreats.co.za">orders@lokusatreats.co.za</a></p>
 
-          '</article>' 
+        </address>
 
-        ); 
+        <a href="https://wa.me/27543897659" class="btn btn-whatsapp">Chat on WhatsApp</a>
 
-      }).join(""); 
+      </div>
 
-      initAddToCartButtons(); 
 
-    }); 
 
-  </script> 
+    </div>
 
-</body> 
+
+
+    <div class="footer-bottom">
+
+      <div class="container footer-bottom-inner">
+
+        <p>&copy; <span id="year"></span> LokusaTreats. All rights reserved.</p>
+
+        <ul class="footer-legal">
+
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <script src="js/products.js"></script>
+
+  <script src="js/cart.js"></script>
+
+  <script src="js/shop-filter.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
 
 </html>
+
 

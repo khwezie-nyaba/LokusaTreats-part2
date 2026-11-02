@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Product Enquiry | LokusaTreats</title>
+
+
+
+    <meta name="description"
+
+        content="Enquire about LokusaTreats products, pricing, and availability. Get an instant estimated cost before you submit.">
+
+
+
+    <link rel="stylesheet" href="Stylesheet.css">
+">
+
+</head>
+
+
+
+<body>
+
+
+
+    <header class="site-header">
+
+
+
+        <div class="container header-inner">
+
+
+
+            <a href="index.html" class="logo">
+
+                <img src="C:\Users\Student\Documents\Visual Studio 2022\My Website\LokusaTreats\Images\LOGO.png" width="250" height="150" alt="LokusaTreats logo">
+
+                <span class="logo-text">LokusaTreats</span>
+
+            </a>
+
+
+
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <ul class="nav-menu">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="shop.html">Our Treats</a></li>
+
+                    <li><a href="custom-orders.html">Custom Cakes</a></li>
+
+                    <li><a href="corporate.html">Corporate &amp; Bulk Orders</a></li>
+
+                    <li><a href="enquiry.html" class="active">Enquiry</a></li>
+
+                    <li><a href="gallery.html">Gallery</a></li>
+
+                    <li><a href="blog.html">Blog</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <div class="header-actions">
+
+                <a href="#" class="icon-link">Search</a>
+
+                <a href="#" class="icon-link">Account</a>
+
+                <a href="cart.html" class="icon-link">Cart</a>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </header>
+
+
+
+
+
+    <main>
+
+
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <p class="eyebrow">Get a Quick Estimate</p>
+
+                <h1>Product Enquiry</h1>
+
+                <p>Pick a treat and quantity for an instant estimated price, then send us your enquiry.</p>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="enquiry-section">
+
+            <div class="container">
+
+
+
+                <form id="enquiry-form" class="enquiry-form" novalidate>
+
+
+
+                    <div class="form-row">
+
+                        <label for="enquiry-name">Full Name</label>
+
+                        <input type="text" id="enquiry-name" name="name" required>
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <label for="enquiry-email">Email</label>
+
+                        <input type="email" id="enquiry-email" name="email" required>
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <label for="enquiry-phone">Phone Number</label>
+
+                        <input type="tel" id="enquiry-phone" name="phone">
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <label for="enquiry-product">Product</label>
+
+                        <select id="enquiry-product" name="product"></select>
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <label for="enquiry-quantity">Quantity</label>
+
+                        <input type="number" id="enquiry-quantity" name="quantity" min="1" value="1" required>
+
+                    </div>
+
+
+
+                    <p id="enquiry-live-estimate" class="enquiry-live-estimate" aria-live="polite"></p>
+
+
+
+                    <div class="form-row form-row-full">
+
+                        <label for="enquiry-message">Additional Details</label>
+
+                        <textarea id="enquiry-message" name="message" rows="4"
+
+                            placeholder="Delivery date, customisation requests, allergies, etc."></textarea>
+
+                    </div>
+
+
+
+                    <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+
+
+
+                </form>
+
+
+
+                <div id="enquiry-result" class="enquiry-result" style="display:none;"></div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <footer class="site-footer">
+
+
+
+        <div class="container footer-grid">
+
+
+
+            <div class="footer-col footer-brand">
+
+                <a href="index.html" class="logo">
+                    <img src="C:\Users\Student\Documents\Visual Studio 2022\My Website\LokusaTreats\Images\LOGO.png" width="250" height="150" alt="LokusaTreats logo">
+
+                    <span class="logo-text">LokusaTreats</span>
+
+                </a>
+
+                <p>Small-batch sweets, made to be shared.</p>
+
+            </div>
+
+
+
+            <nav class="footer-col">
+
+                <h3>Shop</h3>
+
+                <ul>
+
+                    <li><a href="shop.html">Cupcakes</a></li>
+
+                    <li><a href="shop.html">Cookies</a></li>
+
+                    <li><a href="shop.html">Chocolates</a></li>
+
+                    <li><a href="shop.html">Hampers</a></li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <nav class="footer-col">
+
+                <h3>Company</h3>
+
+                <ul>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="corporate.html">Corporate &amp; Bulk Orders</a></li>
+
+                    <li><a href="custom-orders.html">Custom Cakes</a></li>
+
+                    <li><a href="enquiry.html">Enquiry</a></li>
+
+                    <li><a href="blog.html">Blog</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <div class="footer-col">
+
+                <h3>Get in Touch</h3>
+
+                <address>
+
+                    <p>Cape Town, Western Cape, South Africa</p>
+
+                    <p><a href="tel:+275438976596">+27 54 389 7659 6</a></p>
+
+                    <p><a href="mailto:orders@lokusatreats.co.za">orders@lokusatreats.co.za</a></p>
+
+                </address>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>&copy; LokusaTreats. All rights reserved.</p>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+
+
+    <script src="js/products.js"></script>
+
+    <script src="js/cart.js"></script>
+
+    <script src="js/forms.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const select = document.getElementById("enquiry-product");
+
+            if (select && typeof PRODUCTS !== "undefined") {
+
+                select.innerHTML = PRODUCTS.map(function (p) {
+
+                    return '<option value="' + p.id + '">' + p.name + ' &mdash; R ' + p.price.toFixed(2) + '</option>';
+
+                }).join("");
+
+            }
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

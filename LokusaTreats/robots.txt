@@ -1,0 +1,15 @@
+User-agent: *
+
+Allow: /
+
+
+
+Disallow: /cart.html
+
+Disallow: /checkout.html
+
+Disallow: /order-confirmation.html
+
+
+
+Sitemap: https://www.lokusatreats.co.za/sitemap.xml
