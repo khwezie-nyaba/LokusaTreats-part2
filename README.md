@@ -139,4 +139,7 @@ Added `robots.txt` and `sitemap.xml` for SEO.
 Added Part 3 styles to `Stylesheet.css` (accordion, lightbox, form errors, scroll-reveal).
 2026-11-01
 Fixed: broken comment endings in the Part 3 section of `Stylesheet.css` that were stopping the new styles from applying.
-Fixed: contact page map tiles were blocked (OpenStreetMap returned a 403 error and CARTO required an API key), so I switched to Esri map tiles.
+Fixed: contact page map tiles were blocked (OpenStreetMap returned a 403 error and CARTO required an API key), so I switched to Esri map tiles.11
+2026-11-02
+Added: login system (`account.html`, `js/auth.js`): create account, log in and out with validated forms and hashed passwords, and a "Hi, Name" greeting in the header.
+Added: site-wide search (`search.html`, `js/search.js`) across treats, blog posts and pages; the header Search and Account links now work on every page.
