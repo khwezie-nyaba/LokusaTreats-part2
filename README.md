@@ -139,6 +139,43 @@ Added `robots.txt` and `sitemap.xml` for SEO.
 Added Part 3 styles to `Stylesheet.css` (accordion, lightbox, form errors, scroll-reveal).
 2026-11-01
 Fixed: broken comment endings in the Part 3 section of `Stylesheet.css` that were stopping the new styles from applying.
+
+LokusaTreats
+LokusaTreats is a bakery website for a business offering cupcakes, cookies, chocolates, celebration hampers, and custom cakes.
+Technologies Used
+- HTML – website structure and content.
+- CSS – website design, layout, colours, fonts, and responsive styling. The styles are kept in Stylesheet.css.
+- JavaScript – used for features such as products, the shopping cart, and page interactions.
+Website Pages and Features
+- index.html – Home page
+- about.html – About Us
+- shop.html – Our Treats
+- custom-orders.html – Custom Cakes
+- corporate.html – Corporate & Bulk Orders
+- gallery.html – Gallery
+- blog.html – Blog
+- contact.html – Contact page with a live map
+- enquiry.html – Enquiry page
+- search.html – Search page
+- create-account.html – Account creation page
+- login.html – Customer login page
+- cart.html – Shopping cart
+The website also includes product detail pages, a newsletter section, and links to the privacy policy and terms and conditions.
+Main Project Files
+- Stylesheet.css – controls the appearance of the website.
+- Images/ – stores the logo and website images.
+- js/products.js – product information.
+- js/cart.js – shopping cart functionality.
+- js/main.js – general website interactions.
+Running the Website
+1. Open the LokusaTreats project folder in Visual Studio Code.
+2. Make sure the HTML files, Stylesheet.css, Images folder, and js folder are in the project.
+3. Open index.html in a web browser.
+4. Use the navigation menu to visit the different pages.
+Project Status
+The website is being developed using HTML, CSS, and JavaScript. It includes product browsing, customer account pages, search, enquiries, and a contact page with a live map. Some features may need further development or connection to a suitable service to work fully.
+Author
+LokusaTreats Website Project
 Fixed: contact page map tiles were blocked (OpenStreetMap returned a 403 error and CARTO required an API key), so I switched to Esri map tiles.11
 2026-11-02
 Added: login system (`account.html`, `js/auth.js`): create account, log in and out with validated forms and hashed passwords, and a "Hi, Name" greeting in the header.
