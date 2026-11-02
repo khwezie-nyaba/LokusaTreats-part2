@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Log In or Create an Account | LokusaTreats</title>
+
+
+
+    <meta name="description"
+
+        content="Log in or create a LokusaTreats account to see your details and your most recent order.">
+
+
+
+     <link rel="stylesheet" href="Stylesheet.css">
+
+</head>
+
+
+
+<body>
+
+
+
+    <header class="site-header">
+
+
+
+        <div class="container header-inner">
+
+
+
+            <a href="index.html" class="logo">
+
+                <img src="C:\Users\Student\Documents\Visual Studio 2022\My Website\LokusaTreats\Images\LOGO.png" width="250" height="150" alt="LokusaTreats logo">
+
+                <span class="logo-text">LokusaTreats</span>
+
+            </a>
+
+
+
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <ul class="nav-menu">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="shop.html">Our Treats</a></li>
+
+                    <li><a href="custom-orders.html">Custom Cakes</a></li>
+
+                    <li><a href="corporate.html">Corporate &amp; Bulk Orders</a></li>
+
+                    <li><a href="enquiry.html">Enquiry</a></li>
+
+                    <li><a href="gallery.html">Gallery</a></li>
+
+                    <li><a href="blog.html">Blog</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <div class="header-actions">
+
+                <a href="search.html" class="icon-link">Search</a>
+
+                <a href="account.html" class="icon-link">Account</a>
+
+                <a href="cart.html" class="icon-link">Cart <span class="cart-count">0</span></a>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </header>
+
+
+
+
+
+    <main>
+
+
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <p class="eyebrow">Your Account</p>
+
+                <h1>Log In or Create an Account</h1>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="account-section">
+
+            <div class="container">
+
+
+
+                <div id="auth-forms" class="auth-wrapper">
+
+
+
+                    <div class="auth-tabs" role="tablist" aria-label="Account options">
+
+                        <button type="button" class="auth-tab auth-tab-active" data-tab="login" role="tab" aria-selected="true">Log In</button>
+
+                        <button type="button" class="auth-tab" data-tab="register" role="tab" aria-selected="false">Create Account</button>
+
+                    </div>
+
+
+
+                    <form id="login-form" class="auth-form" novalidate>
+
+                        <div class="form-row">
+
+                            <label for="login-email">Email</label>
+
+                            <input type="email" id="login-email" autocomplete="email" required>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <label for="login-password">Password</label>
+
+                            <input type="password" id="login-password" autocomplete="current-password" required>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Log In</button>
+
+                    </form>
+
+
+
+                    <form id="register-form" class="auth-form" novalidate hidden>
+
+                        <div class="form-row">
+
+                            <label for="register-name">Full Name</label>
+
+                            <input type="text" id="register-name" autocomplete="name" required>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <label for="register-email">Email</label>
+
+                            <input type="email" id="register-email" autocomplete="email" required>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <label for="register-password">Password</label>
+
+                            <input type="password" id="register-password" autocomplete="new-password" required>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <label for="register-confirm">Confirm Password</label>
+
+                            <input type="password" id="register-confirm" autocomplete="new-password" required>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+
+                    </form>
+
+
+
+                    <p class="auth-note">Accounts are saved in this browser only, so you will need to create one on each device you use.</p>
+
+
+
+                </div>
+
+
+
+                <div id="account-panel" class="account-panel" hidden>
+
+                    <h2>Welcome, <span id="account-name"></span></h2>
+
+                    <p><strong>Email:</strong> <span id="account-email"></span></p>
+
+                    <p id="account-last-order"></p>
+
+                    <div class="post-cta">
+
+                        <a href="shop.html" class="btn btn-primary">Browse Our Treats</a>
+
+                        <button type="button" id="logout-btn" class="btn btn-secondary">Log Out</button>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <footer class="site-footer">
+
+
+
+        <div class="container footer-grid">
+
+
+
+            <div class="footer-col footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <img src="C:\Users\Student\Documents\Visual Studio 2022\My Website\LokusaTreats\Images\LOGO.png" width="250" height="150" alt="LokusaTreats logo">
+
+                    <span class="logo-text">LokusaTreats</span>
+
+                </a>
+
+                <p>Small-batch sweets, made to be shared.</p>
+
+            </div>
+
+
+
+            <nav class="footer-col">
+
+                <h3>Shop</h3>
+
+                <ul>
+
+                    <li><a href="shop.html">Cupcakes</a></li>
+
+                    <li><a href="shop.html">Cookies</a></li>
+
+                    <li><a href="shop.html">Chocolates</a></li>
+
+                    <li><a href="shop.html">Hampers</a></li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <nav class="footer-col">
+
+                <h3>Company</h3>
+
+                <ul>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="corporate.html">Corporate &amp; Bulk Orders</a></li>
+
+                    <li><a href="custom-orders.html">Custom Cakes</a></li>
+
+                    <li><a href="enquiry.html">Enquiry</a></li>
+
+                    <li><a href="blog.html">Blog</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <div class="footer-col">
+
+                <h3>Get in Touch</h3>
+
+                <address>
+
+                    <p>Cape Town, Western Cape, South Africa</p>
+
+                    <p><a href="tel:+275438976596">+27 54 389 7659 6</a></p>
+
+                    <p><a href="mailto:orders@lokusatreats.co.za">orders@lokusatreats.co.za</a></p>
+
+                </address>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>&copy; LokusaTreats. All rights reserved.</p>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+
+
+    <script src="js/products.js"></script>
+
+    <script src="js/cart.js"></script>
+
+    <script src="js/forms.js"></script>
+
+    <script src="js/auth.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
